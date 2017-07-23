@@ -1,0 +1,6 @@
+<resources>
+<dimen name="rect">218.75dp</dimen>
+<dimen name="box">109.375dp</dimen>
+<dimen name="tsize">50.0sp</dimen>
+<dimen name="tboxsize">74.99999sp</dimen>
+</resources>
