@@ -1,7 +1,8 @@
 <resources>
-<dimen name="rect">87.5dp</dimen>
-<dimen name="box">43.75dp</dimen>
-<dimen name="tsize">20.0sp</dimen>
-<dimen name="tboxsize">29.999998sp</dimen>
-    <dimen name="paddingzero">40.0dp</dimen>
+<dimen name="rect">153.12498dp</dimen>
+<dimen name="box">76.56249dp</dimen>
+<dimen name="tsize">34.999996sp</dimen>
+<dimen name="tboxsize">52.499992sp</dimen>
+<dimen name="paddingzero">69.99999dp</dimen>
+<dimen name="textviewsize">306.24997dp</dimen>
 </resources>

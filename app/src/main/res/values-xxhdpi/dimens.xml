@@ -4,5 +4,6 @@
     <dimen name="tsize">40sp</dimen>
     <dimen name="tboxsize">60sp</dimen>
     <dimen name="paddingzero">80dp</dimen>
+    <dimen name="textviewsize">350dp</dimen>
 
 </resources>
