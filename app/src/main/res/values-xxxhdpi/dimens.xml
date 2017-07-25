@@ -3,4 +3,5 @@
 <dimen name="box">109.375dp</dimen>
 <dimen name="tsize">50.0sp</dimen>
 <dimen name="tboxsize">74.99999sp</dimen>
+    <dimen name="paddingzero">100.0dp</dimen>
 </resources>

@@ -2,256 +2,257 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/black"
+    android:orientation="vertical"
     >
     <EditText
+        android:id="@+id/ed_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ed_input"
-        android:gravity="end|bottom"
-        android:textColor="@color/white"
         android:background="@color/black"
-        android:textSize="@dimen/tboxsize"
+        android:fontFamily="serif"
+        android:gravity="end|bottom"
         android:lines="2"
         android:maxLines="2"
-        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tboxsize"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:gravity="center_horizontal"
 
-        android:gravity="center_horizontal">
+        android:orientation="horizontal">
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
             android:id="@+id/btn_clear"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dark_gray"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="C"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:fontFamily="serif"
-            android:background="@drawable/bg_dark_gray"/>
+            android:textSize="@dimen/tsize" />
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
-            android:fontFamily="serif"
             android:id="@+id/btn_del"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dark_gray"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="+/-"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/bg_dark_gray"/>
+            android:textSize="@dimen/tsize" />
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
-            android:fontFamily="serif"
             android:id="@+id/btn_modulus"
-            android:text="%"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/bg_dark_gray"/>
-        <Button
             android:layout_width="@dimen/box"
             android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dark_gray"
             android:fontFamily="serif"
+            android:gravity="center"
+            android:text="%"
+            android:textSize="@dimen/tsize" />
+        <Button
             android:id="@+id/btn_divide"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_yellow"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="÷"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_yellow"/>
+            android:textSize="@dimen/tsize" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:gravity="center_horizontal"
 
-        android:gravity="center_horizontal">
+        android:orientation="horizontal">
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
             android:id="@+id/btn_7"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_gray"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="7"
-            android:fontFamily="serif"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_gray"/>
+            android:textSize="@dimen/tsize" />
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
-            android:fontFamily="serif"
             android:id="@+id/btn_8"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_gray"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="8"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_gray"/>
+            android:textSize="@dimen/tsize" />
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
-            android:fontFamily="serif"
             android:id="@+id/btn_9"
-            android:text="9"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_gray"/>
-        <Button
             android:layout_width="@dimen/box"
             android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_gray"
             android:fontFamily="serif"
+            android:gravity="center"
+            android:text="9"
+            android:textSize="@dimen/tsize" />
+        <Button
             android:id="@+id/btn_multi"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_yellow"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="×"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_yellow"/>
+            android:textSize="@dimen/tsize" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:gravity="center_horizontal"
 
-        android:gravity="center_horizontal">
+        android:orientation="horizontal">
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
             android:id="@+id/btn_4"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_gray"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="4"
-            android:fontFamily="serif"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_gray"/>
+            android:textSize="@dimen/tsize" />
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
-            android:fontFamily="serif"
             android:id="@+id/btn_5"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_gray"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="5"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_gray"/>
+            android:textSize="@dimen/tsize" />
         <Button
-            android:layout_width="@dimen/box"
-            android:layout_height="@dimen/box"
-            android:fontFamily="serif"
             android:id="@+id/btn_6"
-            android:text="6"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_gray"/>
-        <Button
             android:layout_width="@dimen/box"
             android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_gray"
             android:fontFamily="serif"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="@dimen/tsize" />
+        <Button
             android:id="@+id/btn_minus"
+            android:layout_width="@dimen/box"
+            android:layout_height="@dimen/box"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_yellow"
+            android:fontFamily="serif"
+            android:gravity="center"
             android:text="-"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="@dimen/tsize"
-            android:background="@drawable/button_bg_yellow"/>
+            android:textSize="@dimen/tsize" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:gravity="center_horizontal"
 
-        android:gravity="center_horizontal">
+        android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="@dimen/box"
-                    android:layout_height="@dimen/box"
                     android:id="@+id/btn_1"
+                    android:layout_width="@dimen/box"
+                    android:layout_height="@dimen/box"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_gray"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="1"
-                    android:fontFamily="serif"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="@dimen/tsize"
-                    android:background="@drawable/button_bg_gray"/>
+                    android:textSize="@dimen/tsize" />
                 <Button
-                    android:layout_width="@dimen/box"
-                    android:layout_height="@dimen/box"
-                    android:fontFamily="serif"
                     android:id="@+id/btn_2"
+                    android:layout_width="@dimen/box"
+                    android:layout_height="@dimen/box"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_gray"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="2"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="@dimen/tsize"
-                    android:background="@drawable/button_bg_gray"/>
+                    android:textSize="@dimen/tsize" />
                 <Button
-                    android:layout_width="@dimen/box"
-                    android:layout_height="@dimen/box"
-                    android:fontFamily="serif"
                     android:id="@+id/btn_3"
-                    android:text="3"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="@dimen/tsize"
-                    android:background="@drawable/button_bg_gray"/>
-                <Button
                     android:layout_width="@dimen/box"
                     android:layout_height="@dimen/box"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_gray"
                     android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="@dimen/tsize" />
+                <Button
                     android:id="@+id/btn_add"
+                    android:layout_width="@dimen/box"
+                    android:layout_height="@dimen/box"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_yellow"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="+"
                     android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="@dimen/tsize"
-                    android:background="@drawable/button_bg_yellow"/>
+                    android:textSize="@dimen/tsize" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
                 android:gravity="center_horizontal"
+
+                android:orientation="horizontal"
                 android:weightSum="1">
                 <Button
+                    android:id="@+id/btn_0"
                     android:layout_width="@dimen/rect"
                     android:layout_height="@dimen/box"
-                    android:id="@+id/btn_0"
-                    android:text="0"
-                    android:fontFamily="serif"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="@dimen/tsize"
                     android:background="@drawable/button_bg_gray"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/paddingzero"
+                    android:text="0"
+                    android:textSize="@dimen/tsize"
                     />
                 <Button
-                    android:layout_width="@dimen/box"
-                    android:layout_height="@dimen/box"
-                    android:fontFamily="serif"
                     android:id="@+id/btn_point"
-                    android:text="."
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="@dimen/tsize"
-                    android:background="@drawable/button_bg_gray"/>
-                <Button
                     android:layout_width="@dimen/box"
                     android:layout_height="@dimen/box"
-                    android:id="@+id/btn_equal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_gray"
                     android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="."
+                    android:textSize="@dimen/tsize" />
+                <Button
+                    android:id="@+id/btn_equal"
+                    android:layout_width="@dimen/box"
+                    android:layout_height="@dimen/box"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_yellow"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="="
                     android:textColor="@color/white"
                     android:textSize="@dimen/tsize"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:background="@drawable/button_bg_yellow"
                     />
             </LinearLayout>
         </LinearLayout>
