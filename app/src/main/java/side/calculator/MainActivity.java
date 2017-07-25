@@ -148,15 +148,8 @@ public class MainActivity extends AppCompatActivity {
 
                    if(str!=null && !str.equals("")){
 
-
-                       double neg = Double.parseDouble(str);
-
-                       neg = neg * (-1);
-
-
-                       str = Double.toString(neg);
-
-                       et_input.setText(str);
+                       getNegation mgetNegation = new getNegation();
+                       et_input.setText(Double.toString(mgetNegation.getNegation(str)));
                    }
                    break;
                case R.id.btn_equal:
@@ -191,20 +184,28 @@ public class MainActivity extends AppCompatActivity {
             double d2 = Double.parseDouble(s2);
 
             if(op.equals("+")){
-                result = d1+d2;
+                getAddition mgetAddition = new getAddition();
+                result = mgetAddition.getAddition(d1, d2);
             }else if (op.equals("-")){
-                result=d1-d2;
+
+                getSubtraction mgetSubtraction = new getSubtraction();
+                result= mgetSubtraction.getSubtraction(d1,d2);
             }else if (op.equals("×")) {
-                result = d1 * d2;
+
+                getMultiplication mgetMultiplication = new getMultiplication();
+
+                result = mgetMultiplication.getMultiplication(d1,d2);
             }else {
+                getDivision mgetDivision = new getDivision();
                 if (d2==0)
                     result=0;
                 else if(op.equals("%")) {
 
-                    result = d1 % d2;
+                    getMod mgetMod = new getMod();
+                    result = mgetMod.getMod(d1,d2);
                 }
                 else
-                    result=d1/d2;
+                result=mgetDivision.getDivision(d1,d2);
             }
             String resultstr = result+"";
 
