@@ -147,7 +147,16 @@ public class MainActivity extends AppCompatActivity {
                case R.id.btn_del:
 
                    if(str!=null && !str.equals("")){
-                       et_input.setText(str.substring(0,str.length()-1));
+
+
+                       double neg = Double.parseDouble(str);
+
+                       neg = neg * (-1);
+
+
+                       str = Double.toString(neg);
+
+                       et_input.setText(str);
                    }
                    break;
                case R.id.btn_equal:
@@ -187,11 +196,13 @@ public class MainActivity extends AppCompatActivity {
                 result=d1-d2;
             }else if (op.equals("×")) {
                 result = d1 * d2;
-            }else if (op.equals("%")) {
-                result = d1 % d2;
             }else {
                 if (d2==0)
                     result=0;
+                else if(op.equals("%")) {
+
+                    result = d1 % d2;
+                }
                 else
                     result=d1/d2;
             }
